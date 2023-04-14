@@ -1,6 +1,8 @@
 "use strict";
 
-const testVar = document.querySelector(".divider");
+// import fs
+
+// const testVar = document.querySelector(".divider");
 // testVar.className
 console.log(`${testVar.classList}`);
 testVar.classList.add("divider.test");
