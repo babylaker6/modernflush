@@ -11,4 +11,4 @@ async function insertUser() {
   }
 }
 
-console.log(helloWorld());
+console.log(insertUser());
