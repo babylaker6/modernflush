@@ -1,7 +1,7 @@
 "use strict";
 
-async function helloWorld() {
-  const url = `/.netlify/functions/TestFunction`;
+async function insertUser() {
+  const url = `/.netlify/functions/InsertUser`;
   try {
     const response = await fetch(url);
     const data = await response.json();
