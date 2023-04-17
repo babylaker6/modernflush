@@ -1,10 +1,14 @@
-// "use strict";
+"use strict";
 
-// import { TestFunction } from "@netlify/functions";
+async function helloWorld() {
+  const url = `/.netlify/functions/TestFunction`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-// exports.handler = async function (event, context) {
-//   return {
-//     statusCode: 200,
-//     body: JSON.stringify({ message: "Hello World" }),
-//   };
-// };
+console.log(helloWorld());
