@@ -1,12 +1,10 @@
 "use strict";
 
-// import fs
+import { TestFunction } from "@netlify/functions";
 
-// const testVar = document.querySelector(".divider");
-// testVar.className
-console.log(`${testVar.classList}`);
-testVar.classList.add("divider.test");
-console.log(`${testVar.classList}`);
-testVar.classList.remove("divider");
-console.log(`${testVar.classList}`);
-console.log("test test test boom");
+exports.handler = async function (event, context) {
+  return {
+    statusCode: 200,
+    body: JSON.stringify({ message: "Hello World" }),
+  };
+};
