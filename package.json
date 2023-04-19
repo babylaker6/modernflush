@@ -1,5 +1,21 @@
 {
-  "type": "module",
+  "name": "modern-flush",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/babylaker6/modernflush.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/babylaker6/modernflush/issues"
+  },
+  "homepage": "https://github.com/babylaker6/modernflush#readme",
   "dependencies": {
     "@planetscale/database": "^1.7.0"
   }
