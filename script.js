@@ -1,34 +1,12 @@
 "use strict";
-require("dotenv").config();
-const express = require("express");
-const app = express();
-const port = process.env.PORT || 3000;
 
-const mysql = require("mysq12");
-const connection = mysql.createConnection(process.env.DATABASE_URL);
+const config = {
+  host: "aws.connect.psdb.cloud",
+  username: "jbcd1hq5v5mdf6eur741",
+  password:
+    "DATABASE_PASSWORD=pscale_pw_W2rExiPF6xzbwiMdtw3rvQLF3sfnhZJqQ5zkcU68iBr",
+};
+const conn = await connect(config);
 
-connection.connect();
-
-app.get("/", (req, res) => {
-  connection.query("SELECT * FROM users", function (err, rows, fields) {
-    if (err) throw err;
-    res.send(rows);
-  });
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-});
-
-// async function viewUsers() {
-//   const url = `/.netlify/functions/InsertUser`;
-//   try {
-//     const response = await fetch(url);
-//     const data = await response.json();
-//     return data;
-//   } catch (err) {
-//     console.log(err);
-//   }
-// }
-
-// // console.log(insertUser());
+const results = await conn.execute("SELECT * FROM users");
+console.log(results);
