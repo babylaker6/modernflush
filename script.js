@@ -1,5 +1,5 @@
 "use strict";
-import { connect } from "./index";
+import { connect } from "@planetscale/database";
 
 const config = {
   host: "aws.connect.psdb.cloud",
@@ -9,7 +9,7 @@ const config = {
 };
 
 async function getUsers() {
-  const conn = await connect(config);
+  const conn = connect(config);
 
   const results = await conn.execute("SELECT * FROM users");
   return results;
