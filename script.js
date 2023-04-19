@@ -1,5 +1,5 @@
-import "dotenv/config";
-import { connect } from "@planetscale/database";
+import "/node_modules/dotenv/config";
+import { connect } from "/node_modules/planetscale/database/index";
 const config = {
   host: process.env.DATABASE_HOST,
   username: process.env.DATABASE_USERNAME,
