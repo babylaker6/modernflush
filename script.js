@@ -1,4 +1,5 @@
 "use strict";
+import { connect } from "./index";
 
 const config = {
   host: "aws.connect.psdb.cloud",
