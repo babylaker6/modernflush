@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@planetscale/database": "^1.7.0",
-    "type": "module"
+    "@planetscale/database": "^1.7.0"
   }
 }
