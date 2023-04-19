@@ -6,7 +6,12 @@ const config = {
   password:
     "DATABASE_PASSWORD=pscale_pw_W2rExiPF6xzbwiMdtw3rvQLF3sfnhZJqQ5zkcU68iBr",
 };
-const conn = await connect(config);
 
-const results = await conn.execute("SELECT * FROM users");
-console.log(results);
+async function getUsers() {
+  const conn = await connect(config);
+
+  const results = await conn.execute("SELECT * FROM users");
+  return results;
+}
+
+console.log(getUsers());
