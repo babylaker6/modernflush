@@ -1,6 +1,6 @@
 {
-  "type": "module",
   "dependencies": {
-    "@planetscale/database": "^1.7.0"
+    "@planetscale/database": "^1.7.0",
+    "type": "module"
   }
 }
