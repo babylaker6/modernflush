@@ -4,10 +4,10 @@ import { connect } from "@planetscale/database";
 
 const config = {
   host: "aws.connect.psdb.cloud",
-  username: "x0fn9kyj8omn413bjuz9",
-  password: "pscale_pw_SQZkm4r1Agcs3P9ik4uRu5uaMxZpOnr59rVAKTAXnO8",
+  username: "jbcd1hq5v5mdf6eur741",
+  password: "pscale_pw_W2rExiPF6xzbwiMdtw3rvQLF3sfnhZJqQ5zkcU68iBr",
 };
 
-const conn = connect(config);
-const results = await conn.execute("SHOW TABLES");
+const conn = await connect(config);
+const results = await conn.execute("SELECT * FROM users");
 console.log(results);
