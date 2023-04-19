@@ -1,4 +1,4 @@
-import { connect } from "@planetscale/database";
+import { connect } from "index";
 
 const config = {
   host: "aws.connect.psdb.cloud",
