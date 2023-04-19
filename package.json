@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/babylaker6/modernflush#readme",
   "dependencies": {
-    "@planetscale/database": "^1.7.0"
+    "@planetscale/database": "^1.7.0",
+    "dotenv": "^16.0.3"
   }
 }

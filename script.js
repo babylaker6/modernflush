@@ -7,3 +7,4 @@ const config = {
 };
 const conn = connect(config);
 const results = await conn.execute("SELECT * FROM users");
+console.log(results);
