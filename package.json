@@ -1,4 +1,5 @@
 {
+  "type": "module",
   "dependencies": {
     "@planetscale/database": "^1.7.0"
   }
