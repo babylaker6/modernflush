@@ -1,5 +1,6 @@
 // import "/node_modules/dotenv/config";
-import { connect } from "@planetscale/database";
+import { connect } from "@planetscaledatabase";
+
 const config = {
   host: aws.connect.psdb.cloud,
   username: rg5rw4dmf3buezajhwid,
