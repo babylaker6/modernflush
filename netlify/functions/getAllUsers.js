@@ -6,5 +6,4 @@ const config = {
   password: process.env.DATABASE_PASSWORD,
 };
 const conn = connect(config);
-const results = await conn.execute("SELECT * from USERS");
-return results;
+const results = await conn.execute("select * from users");

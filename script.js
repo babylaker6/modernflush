@@ -14,7 +14,7 @@ async function getUsersTable() {
     const data = await response.json();
     console.log(data);
   } catch (err) {
-    console.log(err);
+    console.log("error");
   }
 }
 
