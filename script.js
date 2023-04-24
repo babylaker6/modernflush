@@ -1,20 +1,25 @@
 // import "/node_modules/dotenv/config";
-import { connect } from "@planetscale/database";
+// import { connect } from "@planetscale/database";
 
-const config = {
-  host: aws.connect.psdb.cloud,
-  username: rg5rw4dmf3buezajhwid,
-  password: pscale_pw_OA1d9AUflejqC5cAOxRgCa1RkRPwDl3db7dDkQEzpnn,
-};
+// const config = {
+//   host: aws.connect.psdb.cloud,
+//   username: rg5rw4dmf3buezajhwid,
+//   password: pscale_pw_OA1d9AUflejqC5cAOxRgCa1RkRPwDl3db7dDkQEzpnn,
+// };
 
-async function getUsers() {
-  const conn = connect(config);
-  const results = await conn.execute("SELECT * FROM users");
-  console.log(results);
+async function getAllUsers() {
+  const url = `/.netlify/functions/getAllUsers`;
+  try {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.log(err);
+  }
 }
 
-getUsers();
+getAllUsers();
 
-if (module.hot) {
-  module.hot.accept();
-}
+// if (module.hot) {
+//   module.hot.accept();
+// }

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/babylaker6/modernflush#readme",
   "dependencies": {
+    "@netlify/planetscale": "^1.0.0",
     "@planetscale/database": "^1.7.0",
     "npm": "^9.6.5",
     "planetscale": "^2.1.0"
