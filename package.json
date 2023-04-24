@@ -25,6 +25,7 @@
   },
   "description": "",
   "devDependencies": {
+    "cssnano": "^6.0.0",
     "parcel": "^2.8.3"
   }
 }
