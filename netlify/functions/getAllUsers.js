@@ -1,7 +1,10 @@
-exports.handler = async function (event, context) {
-  // your server-side functionality
-  return {
-    statusCode: 200,
-    body: JSON.stringify({ message: "Hello World" }),
-  };
+import "dotenv/config";
+import { connect } from "@planetscale/database";
+const config = {
+  host: process.env.DATABASE_HOST,
+  username: process.env.DATABASE_USERNAME,
+  password: process.env.DATABASE_PASSWORD,
 };
+const conn = connect(config);
+const results = await conn.execute("SELECT * from USERS");
+return results;
