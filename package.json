@@ -11,7 +11,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "parcel build",
+    "build": "parcel build index.html --dist-dir dist",
     "start": "parcel"
   },
   "repository": {
@@ -24,7 +24,6 @@
     "url": "https://github.com/babylaker6/modernflush/issues"
   },
   "homepage": "https://github.com/babylaker6/modernflush#readme",
-  "description": "",
   "devDependencies": {
     "buffer": "^5.7.1",
     "os-browserify": "^0.3.0",
