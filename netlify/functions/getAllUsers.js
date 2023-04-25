@@ -8,8 +8,6 @@ const config = {
 };
 const conn = connect(config);
 
-async function selectAllUsers() {
+exports.handler = async function (event, context) {
   const results = await conn.execute("select * from users");
-}
-
-selectAllUsers();
+};
