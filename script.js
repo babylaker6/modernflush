@@ -4,8 +4,8 @@ import { connect } from "@planetscale/database";
 async function getUsers() {
   const config = {
     host: "aws.connect.psdb.cloud",
-    username: "afvchs27qyfje5qvqd95",
-    password: "pscale_pw_8bb4Azp1B2iNbvHKMkjVGNlVYYqnjBEcNWMa1MJCF5o",
+    username: "djawdrp6tdsrq67e7n47",
+    password: "pscale_pw_MMlRZXTuNGZqhwG34qBl0RZtjhTsH2hYBHzSnNSq7TW",
   };
 
   const conn = await connect(config);
