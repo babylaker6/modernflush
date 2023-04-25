@@ -1,6 +1,6 @@
 console.log("test cl");
 // import {} from "dotenv/config";
-const mysql = require("mysql2");
+const mysql = require("mysql2/index.js");
 console.log("test cl2");
 // const mysql = import("mysql2/promise");
 console.log("test cl");
