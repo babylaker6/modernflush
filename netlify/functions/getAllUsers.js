@@ -1,5 +1,5 @@
-import "dotenv/config";
-import { connect } from "@planetscale/database";
+// import "dotenv/config";
+// import { connect } from "@planetscale/database";
 
 exports.handler = async function (event, context) {
   const config = {
