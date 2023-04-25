@@ -1,7 +1,8 @@
 console.log("test cl");
 import {} from "dotenv/config";
+// import {} from "mysql2/promise";
 console.log("test cl2");
-const mysql = require("mysql2");
+const mysql = require("mysql2/promise");
 console.log("test cl");
 // const connection = mysql.createConnection(process.env.DATABASE_URL);
 // console.log("Connected to PlanetScale!");
